@@ -2,366 +2,26 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2015-12-08T11:50:30</date>
-  <millis>1449568230984</millis>
-  <sequence>4337</sequence>
-  <logger>org.glassfish.grizzly.http.server.NetworkListener</logger>
-  <level>INFO</level>
-  <class>org.glassfish.grizzly.http.server.NetworkListener</class>
-  <method>start</method>
-  <thread>16</thread>
-  <message>Started listener bound to [0.0.0.0:80]</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:30</date>
-  <millis>1449568230994</millis>
-  <sequence>4338</sequence>
-  <logger>org.glassfish.grizzly.http.server.HttpServer</logger>
-  <level>INFO</level>
-  <class>org.glassfish.grizzly.http.server.HttpServer</class>
-  <method>start</method>
-  <thread>16</thread>
-  <message>[HttpServer] Started.</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:31</date>
-  <millis>1449568231982</millis>
-  <sequence>4349</sequence>
+  <date>2015-12-09T14:53:42</date>
+  <millis>1449669222447</millis>
+  <sequence>69002</sequence>
   <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
   <level>WARNING</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
   <method>createChain</method>
-  <thread>29</thread>
-  <message>Entering fallback because of error [Exception raised for view 'customFactorsRaw' [javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure]]</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:31</date>
-  <millis>1449568231985</millis>
-  <sequence>4350</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>29</thread>
-  <message>Failed to refresh cache for view: customFactorsRaw</message>
-  <exception>
-    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'customFactorsRaw' [javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure]</message>
-    <frame>
-      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
-      <method>getConfiguredAdaptor</method>
-      <line>42</line>
-    </frame>
-    <frame>
-      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
-      <method>&lt;init&gt;</method>
-      <line>21</line>
-    </frame>
-    <frame>
-      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
-      <method>&lt;init&gt;</method>
-      <line>46</line>
-    </frame>
-    <frame>
-      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-      <method>createChain</method>
-      <line>117</line>
-    </frame>
-    <frame>
-      <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-      <method>refresh</method>
-      <line>149</line>
-    </frame>
-    <frame>
-      <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
-      <method>run</method>
-      <line>22</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.ThreadPoolExecutor</class>
-      <method>runWorker</method>
-      <line>1145</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
-      <method>run</method>
-      <line>615</line>
-    </frame>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>run</method>
-      <line>745</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2015-12-08T11:50:33</date>
-  <millis>1449568233075</millis>
-  <sequence>4389</sequence>
-  <logger>org.glassfish.grizzly.http.server.NetworkListener</logger>
-  <level>INFO</level>
-  <class>org.glassfish.grizzly.http.server.NetworkListener</class>
-  <method>start</method>
-  <thread>16</thread>
-  <message>Started listener bound to [0.0.0.0:443]</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:33</date>
-  <millis>1449568233076</millis>
-  <sequence>4390</sequence>
-  <logger>org.glassfish.grizzly.http.server.HttpServer</logger>
-  <level>INFO</level>
-  <class>org.glassfish.grizzly.http.server.HttpServer</class>
-  <method>start</method>
-  <thread>16</thread>
-  <message>[HttpServer-1] Started.</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:33</date>
-  <millis>1449568233322</millis>
-  <sequence>4407</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>30</thread>
-  <message>Cache has been refresh for view: listNgi</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:33</date>
-  <millis>1449568233918</millis>
-  <sequence>4440</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>31</thread>
-  <message>Cache has been refresh for view: goc.ServiceFlavours</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:34</date>
-  <millis>1449568234684</millis>
-  <sequence>4561</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>31</thread>
-  <message>Cache has been refresh for view: listSite</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:35</date>
-  <millis>1449568235057</millis>
-  <sequence>4666</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>31</thread>
-  <message>Cache has been refresh for view: navbar</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:35</date>
-  <millis>1449568235165</millis>
-  <sequence>4855</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>31</thread>
-  <message>Cache has been refresh for view: customFactors</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:36</date>
-  <millis>1449568236410</millis>
-  <sequence>4891</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>31</thread>
-  <message>Cache has been refresh for view: aggregation_profiles</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:36</date>
-  <millis>1449568236599</millis>
-  <sequence>4927</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>31</thread>
-  <message>Cache has been refresh for view: reports</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:37</date>
-  <millis>1449568237389</millis>
-  <sequence>4962</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>31</thread>
-  <message>Cache has been refresh for view: comparison_cern_view_cloud</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:37</date>
-  <millis>1449568237396</millis>
-  <sequence>4976</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>32</thread>
-  <message>Cache has been refresh for view: ngiContactsList</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:37</date>
-  <millis>1449568237487</millis>
-  <sequence>5099</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>31</thread>
-  <message>Cache has been refresh for view: default</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:37</date>
-  <millis>1449568237534</millis>
-  <sequence>5128</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>31</thread>
-  <message>Cache has been refresh for view: categories</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:37</date>
-  <millis>1449568237619</millis>
-  <sequence>5234</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>31</thread>
-  <message>Cache has been refresh for view: _default_</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:38</date>
-  <millis>1449568238362</millis>
-  <sequence>5237</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>29</thread>
-  <message>Cache has been refresh for view: goc.siteList</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:39</date>
-  <millis>1449568239610</millis>
-  <sequence>5238</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>INFO</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>30</thread>
-  <message>Cache has been refresh for view: comparison_cern_view</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:39</date>
-  <millis>1449568239835</millis>
-  <sequence>5307</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>30</thread>
-  <message>Entering fallback because of error [Exception raised for view 'comparison_main' [java.io.IOException: 404 page not found
-]]</message>
-</record>
-<record>
-  <date>2015-12-08T11:50:39</date>
-  <millis>1449568239838</millis>
-  <sequence>5308</sequence>
-  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-  <method>refresh</method>
-  <thread>30</thread>
-  <message>Failed to refresh cache for view: comparison_main</message>
-  <exception>
-    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'comparison_main' [java.io.IOException: 404 page not found
-]</message>
-    <frame>
-      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
-      <method>getConfiguredAdaptor</method>
-      <line>42</line>
-    </frame>
-    <frame>
-      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
-      <method>&lt;init&gt;</method>
-      <line>21</line>
-    </frame>
-    <frame>
-      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
-      <method>&lt;init&gt;</method>
-      <line>46</line>
-    </frame>
-    <frame>
-      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-      <method>createChain</method>
-      <line>117</line>
-    </frame>
-    <frame>
-      <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
-      <method>refresh</method>
-      <line>149</line>
-    </frame>
-    <frame>
-      <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
-      <method>run</method>
-      <line>22</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.ThreadPoolExecutor</class>
-      <method>runWorker</method>
-      <line>1145</line>
-    </frame>
-    <frame>
-      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
-      <method>run</method>
-      <line>615</line>
-    </frame>
-    <frame>
-      <class>java.lang.Thread</class>
-      <method>run</method>
-      <line>745</line>
-    </frame>
-  </exception>
-</record>
-<record>
-  <date>2015-12-08T11:50:39</date>
-  <millis>1449568239844</millis>
-  <sequence>5311</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>31</thread>
+  <thread>200</thread>
   <message>Entering fallback because of error [Exception raised for view 'comparison_main_cloud' [java.io.IOException: 404 page not found
 ]]</message>
 </record>
 <record>
-  <date>2015-12-08T11:50:39</date>
-  <millis>1449568239848</millis>
-  <sequence>5312</sequence>
+  <date>2015-12-09T14:53:42</date>
+  <millis>1449669222448</millis>
+  <sequence>69003</sequence>
   <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
   <level>WARNING</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
   <method>refresh</method>
-  <thread>31</thread>
+  <thread>200</thread>
   <message>Failed to refresh cache for view: comparison_main_cloud</message>
   <exception>
     <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'comparison_main_cloud' [java.io.IOException: 404 page not found
@@ -414,103 +74,197 @@
   </exception>
 </record>
 <record>
-  <date>2015-12-08T11:51:06</date>
-  <millis>1449568266291</millis>
-  <sequence>5314</sequence>
+  <date>2015-12-09T14:53:42</date>
+  <millis>1449669222466</millis>
+  <sequence>69006</sequence>
+  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+  <method>createChain</method>
+  <thread>199</thread>
+  <message>Entering fallback because of error [Exception raised for view 'comparison_main' [java.io.IOException: 404 page not found
+]]</message>
+</record>
+<record>
+  <date>2015-12-09T14:53:42</date>
+  <millis>1449669222468</millis>
+  <sequence>69007</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>199</thread>
+  <message>Failed to refresh cache for view: comparison_main</message>
+  <exception>
+    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'comparison_main' [java.io.IOException: 404 page not found
+]</message>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
+      <method>getConfiguredAdaptor</method>
+      <line>42</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
+      <method>&lt;init&gt;</method>
+      <line>21</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
+      <method>&lt;init&gt;</method>
+      <line>46</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+      <method>createChain</method>
+      <line>117</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+      <method>refresh</method>
+      <line>149</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
+      <method>run</method>
+      <line>22</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1145</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>615</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>745</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2015-12-09T14:53:47</date>
+  <millis>1449669227424</millis>
+  <sequence>69024</sequence>
   <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
   <level>INFO</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
   <method>refresh</method>
-  <thread>32</thread>
+  <thread>198</thread>
   <message>Cache has been refresh for view: goc.HostList</message>
 </record>
 <record>
-  <date>2015-12-08T12:00:30</date>
-  <millis>1449568830609</millis>
-  <sequence>5489</sequence>
+  <date>2015-12-09T15:03:37</date>
+  <millis>1449669817799</millis>
+  <sequence>74325</sequence>
   <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
   <level>WARNING</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
   <method>createChain</method>
-  <thread>29</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-05T00:00:00Z-2015-12-05T23:59:59Z-false]]</message>
-</record>
-<record>
-  <date>2015-12-08T12:00:30</date>
-  <millis>1449568830679</millis>
-  <sequence>5566</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>29</thread>
+  <thread>201</thread>
   <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-06T00:00:00Z-2015-12-06T23:59:59Z-false]]</message>
 </record>
 <record>
-  <date>2015-12-08T12:00:30</date>
-  <millis>1449568830743</millis>
-  <sequence>5643</sequence>
+  <date>2015-12-09T15:03:37</date>
+  <millis>1449669817808</millis>
+  <sequence>74402</sequence>
   <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
   <level>WARNING</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
   <method>createChain</method>
-  <thread>29</thread>
+  <thread>201</thread>
   <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-07T00:00:00Z-2015-12-07T23:59:59Z-false]]</message>
 </record>
 <record>
-  <date>2015-12-08T12:00:30</date>
-  <millis>1449568830808</millis>
-  <sequence>5720</sequence>
+  <date>2015-12-09T15:03:37</date>
+  <millis>1449669817817</millis>
+  <sequence>74479</sequence>
   <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
   <level>WARNING</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
   <method>createChain</method>
-  <thread>29</thread>
+  <thread>201</thread>
+  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-08T00:00:00Z-2015-12-08T23:59:59Z-false]]</message>
+</record>
+<record>
+  <date>2015-12-09T15:03:37</date>
+  <millis>1449669817825</millis>
+  <sequence>74556</sequence>
+  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+  <method>createChain</method>
+  <thread>201</thread>
+  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-08T00:00:00Z-2015-12-08T23:59:59Z-false]]</message>
+</record>
+<record>
+  <date>2015-12-09T15:03:37</date>
+  <millis>1449669817834</millis>
+  <sequence>74633</sequence>
+  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+  <method>createChain</method>
+  <thread>201</thread>
   <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-07T00:00:00Z-2015-12-07T23:59:59Z-false]]</message>
 </record>
 <record>
-  <date>2015-12-08T12:00:30</date>
-  <millis>1449568830835</millis>
-  <sequence>5797</sequence>
+  <date>2015-12-09T15:03:37</date>
+  <millis>1449669817842</millis>
+  <sequence>74710</sequence>
   <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
   <level>WARNING</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
   <method>createChain</method>
-  <thread>29</thread>
+  <thread>201</thread>
   <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-06T00:00:00Z-2015-12-06T23:59:59Z-false]]</message>
 </record>
 <record>
-  <date>2015-12-08T12:00:30</date>
-  <millis>1449568830893</millis>
-  <sequence>5874</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
+  <date>2015-12-09T15:03:37</date>
+  <millis>1449669817872</millis>
+  <sequence>74953</sequence>
+  <logger>fr.in2p3.lavoisier.connector.RotatingCacheConnector</logger>
   <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>29</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-05T00:00:00Z-2015-12-05T23:59:59Z-false]]</message>
+  <class>fr.in2p3.lavoisier.connector.RotatingCacheConnector</class>
+  <method>writeToContentHandler</method>
+  <thread>201</thread>
+  <message>RotatingCacheConnector has deleted unreferenced file: /tmp/argo/api.status.rotating.caches/1449665229460</message>
 </record>
 <record>
-  <date>2015-12-08T12:00:31</date>
-  <millis>1449568831319</millis>
-  <sequence>6139</sequence>
+  <date>2015-12-09T15:03:37</date>
+  <millis>1449669817872</millis>
+  <sequence>74954</sequence>
+  <logger>fr.in2p3.lavoisier.connector.RotatingCacheConnector</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.connector.RotatingCacheConnector</class>
+  <method>writeToContentHandler</method>
+  <thread>201</thread>
+  <message>RotatingCacheConnector has deleted unreferenced file: /tmp/argo/api.status.rotating.caches/1449667904286</message>
+</record>
+<record>
+  <date>2015-12-09T15:03:38</date>
+  <millis>1449669818234</millis>
+  <sequence>74977</sequence>
   <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
   <level>WARNING</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
   <method>createChain</method>
-  <thread>29</thread>
+  <thread>201</thread>
   <message>Entering fallback because of error [Exception raised for view 'api.status.call' [java.io.IOException: 404 page not found
 ]]</message>
 </record>
 <record>
-  <date>2015-12-08T12:00:31</date>
-  <millis>1449568831323</millis>
-  <sequence>6140</sequence>
+  <date>2015-12-09T15:03:38</date>
+  <millis>1449669818237</millis>
+  <sequence>74978</sequence>
   <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
   <level>WARNING</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
   <method>refresh</method>
-  <thread>29</thread>
+  <thread>201</thread>
   <message>Failed to refresh cache for view: triggers_status</message>
   <exception>
     <message>fr.in2p3.lavoisier.interfaces.error.AdaptorException: Exception raised for view 'triggers_status' [Adaptor raised exception -- java.lang.RuntimeException: fr.in2p3.lavoisier.interfaces.error.AdaptorException: Exception raised for view 'site_status_reports_cached' [Adaptor raised exception -- java.lang.RuntimeException: fr.in2p3.lavoisier.interfaces.error.AdaptorException: Exception raised for view 'api.status.rotating.caches' [Adaptor raised exception -- fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'api.status.call' [java.io.IOException: 404 page not found
@@ -558,115 +312,65 @@
   </exception>
 </record>
 <record>
-  <date>2015-12-08T12:10:30</date>
-  <millis>1449569430571</millis>
-  <sequence>11692</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>30</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-05T00:00:00Z-2015-12-05T23:59:59Z-false]]</message>
+  <date>2015-12-09T15:07:16</date>
+  <millis>1449670036817</millis>
+  <sequence>83791</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>230</thread>
+  <message>Cache has been refresh for view: goc.ServiceFlavours</message>
 </record>
 <record>
-  <date>2015-12-08T12:10:30</date>
-  <millis>1449569430637</millis>
-  <sequence>11769</sequence>
+  <date>2015-12-09T15:07:16</date>
+  <millis>1449670036912</millis>
+  <sequence>83827</sequence>
   <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
   <level>WARNING</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
   <method>createChain</method>
-  <thread>30</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-06T00:00:00Z-2015-12-06T23:59:59Z-false]]</message>
-</record>
-<record>
-  <date>2015-12-08T12:10:30</date>
-  <millis>1449569430702</millis>
-  <sequence>11846</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>30</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-07T00:00:00Z-2015-12-07T23:59:59Z-false]]</message>
-</record>
-<record>
-  <date>2015-12-08T12:10:30</date>
-  <millis>1449569430778</millis>
-  <sequence>11923</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>30</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-07T00:00:00Z-2015-12-07T23:59:59Z-false]]</message>
-</record>
-<record>
-  <date>2015-12-08T12:10:30</date>
-  <millis>1449569430843</millis>
-  <sequence>12000</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>30</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-06T00:00:00Z-2015-12-06T23:59:59Z-false]]</message>
-</record>
-<record>
-  <date>2015-12-08T12:10:30</date>
-  <millis>1449569430869</millis>
-  <sequence>12077</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>30</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-05T00:00:00Z-2015-12-05T23:59:59Z-false]]</message>
-</record>
-<record>
-  <date>2015-12-08T12:10:31</date>
-  <millis>1449569431074</millis>
-  <sequence>12342</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>30</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.call' [java.io.IOException: 404 page not found
+  <thread>228</thread>
+  <message>Entering fallback because of error [Exception raised for view 'customFactorsRaw' [java.io.IOException: 404 page not found
 ]]</message>
 </record>
 <record>
-  <date>2015-12-08T12:10:31</date>
-  <millis>1449569431075</millis>
-  <sequence>12343</sequence>
+  <date>2015-12-09T15:07:16</date>
+  <millis>1449670036913</millis>
+  <sequence>83828</sequence>
   <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
   <level>WARNING</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
   <method>refresh</method>
-  <thread>30</thread>
-  <message>Failed to refresh cache for view: triggers_status</message>
+  <thread>228</thread>
+  <message>Failed to refresh cache for view: customFactorsRaw</message>
   <exception>
-    <message>fr.in2p3.lavoisier.interfaces.error.AdaptorException: Exception raised for view 'triggers_status' [Adaptor raised exception -- java.lang.RuntimeException: fr.in2p3.lavoisier.interfaces.error.AdaptorException: Exception raised for view 'site_status_reports_cached' [Adaptor raised exception -- java.lang.RuntimeException: fr.in2p3.lavoisier.interfaces.error.AdaptorException: Exception raised for view 'api.status.rotating.caches' [Adaptor raised exception -- fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'api.status.call' [java.io.IOException: 404 page not found
-]]]]</message>
+    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'customFactorsRaw' [java.io.IOException: 404 page not found
+]</message>
     <frame>
-      <class>fr.in2p3.lavoisier.chaining.link.connector.SAXConnectorLink</class>
-      <method>generate</method>
-      <line>26</line>
+      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
+      <method>getConfiguredAdaptor</method>
+      <line>42</line>
     </frame>
     <frame>
-      <class>fr.in2p3.lavoisier.chaining.Chain</class>
-      <method>generate</method>
-      <line>120</line>
+      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
+      <method>&lt;init&gt;</method>
+      <line>21</line>
     </frame>
     <frame>
-      <class>fr.in2p3.lavoisier.chaining.Chain</class>
-      <method>writeToCache</method>
-      <line>109</line>
+      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
+      <method>&lt;init&gt;</method>
+      <line>46</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+      <method>createChain</method>
+      <line>117</line>
     </frame>
     <frame>
       <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
       <method>refresh</method>
-      <line>151</line>
+      <line>149</line>
     </frame>
     <frame>
       <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
@@ -691,225 +395,119 @@
   </exception>
 </record>
 <record>
-  <date>2015-12-08T12:20:30</date>
-  <millis>1449570030570</millis>
-  <sequence>12881</sequence>
+  <date>2015-12-09T15:07:16</date>
+  <millis>1449670036971</millis>
+  <sequence>83877</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>229</thread>
+  <message>Cache has been refresh for view: listNgi</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:17</date>
+  <millis>1449670037160</millis>
+  <sequence>83998</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>229</thread>
+  <message>Cache has been refresh for view: listSite</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:17</date>
+  <millis>1449670037191</millis>
+  <sequence>84103</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>229</thread>
+  <message>Cache has been refresh for view: navbar</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:17</date>
+  <millis>1449670037451</millis>
+  <sequence>84504</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>231</thread>
+  <message>Cache has been refresh for view: ngiContactsList</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:17</date>
+  <millis>1449670037791</millis>
+  <sequence>86234</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>230</thread>
+  <message>Cache has been refresh for view: goc.siteList</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:17</date>
+  <millis>1449670037867</millis>
+  <sequence>86437</sequence>
   <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
   <level>WARNING</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
   <method>createChain</method>
-  <thread>31</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-05T00:00:00Z-2015-12-05T23:59:59Z-false]]</message>
+  <thread>231</thread>
+  <message>Entering fallback because of error [Exception raised for view 'aggregation_profiles' [java.io.IOException: &lt;root&gt;
+ &lt;status&gt;
+  &lt;message&gt;Unauthorized&lt;/message&gt;
+  &lt;code&gt;401&lt;/code&gt;
+  &lt;details&gt;You need to provide a correct authentication token using the header &amp;#39;x-api-key&amp;#39;&lt;/details&gt;
+ &lt;/status&gt;
+&lt;/root&gt;]]</message>
 </record>
 <record>
-  <date>2015-12-08T12:20:30</date>
-  <millis>1449570030637</millis>
-  <sequence>12958</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>31</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-06T00:00:00Z-2015-12-06T23:59:59Z-false]]</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:30</date>
-  <millis>1449570030700</millis>
-  <sequence>13035</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>31</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-07T00:00:00Z-2015-12-07T23:59:59Z-false]]</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:30</date>
-  <millis>1449570030763</millis>
-  <sequence>13112</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>31</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-07T00:00:00Z-2015-12-07T23:59:59Z-false]]</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:30</date>
-  <millis>1449570030825</millis>
-  <sequence>13189</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>31</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-06T00:00:00Z-2015-12-06T23:59:59Z-false]]</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:30</date>
-  <millis>1449570030889</millis>
-  <sequence>13266</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>31</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.rotating.caches' [java.io.IOException: Can not delete entry from RotatingCache for unknown key: Critical-sites-2015-12-05T00:00:00Z-2015-12-05T23:59:59Z-false]]</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:31</date>
-  <millis>1449570031099</millis>
-  <sequence>13509</sequence>
-  <logger>fr.in2p3.lavoisier.connector.RotatingCacheConnector</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.connector.RotatingCacheConnector</class>
-  <method>writeToContentHandler</method>
-  <thread>31</thread>
-  <message>RotatingCacheConnector has deleted unreferenced file: /tmp/api.status.rotating.caches/1449565779733</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:31</date>
-  <millis>1449570031102</millis>
-  <sequence>13510</sequence>
-  <logger>fr.in2p3.lavoisier.connector.RotatingCacheConnector</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.connector.RotatingCacheConnector</class>
-  <method>writeToContentHandler</method>
-  <thread>31</thread>
-  <message>RotatingCacheConnector has deleted unreferenced file: /tmp/api.status.rotating.caches/1449564165535</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:31</date>
-  <millis>1449570031108</millis>
-  <sequence>13511</sequence>
-  <logger>fr.in2p3.lavoisier.connector.RotatingCacheConnector</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.connector.RotatingCacheConnector</class>
-  <method>writeToContentHandler</method>
-  <thread>31</thread>
-  <message>RotatingCacheConnector has deleted unreferenced file: /tmp/api.status.rotating.caches/1449566979595</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:31</date>
-  <millis>1449570031111</millis>
-  <sequence>13512</sequence>
-  <logger>fr.in2p3.lavoisier.connector.RotatingCacheConnector</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.connector.RotatingCacheConnector</class>
-  <method>writeToContentHandler</method>
-  <thread>31</thread>
-  <message>RotatingCacheConnector has deleted unreferenced file: /tmp/api.status.rotating.caches/1449565179740</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:31</date>
-  <millis>1449570031113</millis>
-  <sequence>13513</sequence>
-  <logger>fr.in2p3.lavoisier.connector.RotatingCacheConnector</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.connector.RotatingCacheConnector</class>
-  <method>writeToContentHandler</method>
-  <thread>31</thread>
-  <message>RotatingCacheConnector has deleted unreferenced file: /tmp/api.status.rotating.caches/1449569430957</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:31</date>
-  <millis>1449570031118</millis>
-  <sequence>13514</sequence>
-  <logger>fr.in2p3.lavoisier.connector.RotatingCacheConnector</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.connector.RotatingCacheConnector</class>
-  <method>writeToContentHandler</method>
-  <thread>31</thread>
-  <message>RotatingCacheConnector has deleted unreferenced file: /tmp/api.status.rotating.caches/1449563565518</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:31</date>
-  <millis>1449570031121</millis>
-  <sequence>13515</sequence>
-  <logger>fr.in2p3.lavoisier.connector.RotatingCacheConnector</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.connector.RotatingCacheConnector</class>
-  <method>writeToContentHandler</method>
-  <thread>31</thread>
-  <message>RotatingCacheConnector has deleted unreferenced file: /tmp/api.status.rotating.caches/1449562966426</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:31</date>
-  <millis>1449570031124</millis>
-  <sequence>13516</sequence>
-  <logger>fr.in2p3.lavoisier.connector.RotatingCacheConnector</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.connector.RotatingCacheConnector</class>
-  <method>writeToContentHandler</method>
-  <thread>31</thread>
-  <message>RotatingCacheConnector has deleted unreferenced file: /tmp/api.status.rotating.caches/1449566379734</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:31</date>
-  <millis>1449570031126</millis>
-  <sequence>13517</sequence>
-  <logger>fr.in2p3.lavoisier.connector.RotatingCacheConnector</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.connector.RotatingCacheConnector</class>
-  <method>writeToContentHandler</method>
-  <thread>31</thread>
-  <message>RotatingCacheConnector has deleted unreferenced file: /tmp/api.status.rotating.caches/1449568831109</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:31</date>
-  <millis>1449570031129</millis>
-  <sequence>13518</sequence>
-  <logger>fr.in2p3.lavoisier.connector.RotatingCacheConnector</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.connector.RotatingCacheConnector</class>
-  <method>writeToContentHandler</method>
-  <thread>31</thread>
-  <message>RotatingCacheConnector has deleted unreferenced file: /tmp/api.status.rotating.caches/1449567579623</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:31</date>
-  <millis>1449570031354</millis>
-  <sequence>13541</sequence>
-  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
-  <level>WARNING</level>
-  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
-  <method>createChain</method>
-  <thread>31</thread>
-  <message>Entering fallback because of error [Exception raised for view 'api.status.call' [java.io.IOException: 404 page not found
-]]</message>
-</record>
-<record>
-  <date>2015-12-08T12:20:31</date>
-  <millis>1449570031358</millis>
-  <sequence>13542</sequence>
+  <date>2015-12-09T15:07:17</date>
+  <millis>1449670037867</millis>
+  <sequence>86438</sequence>
   <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
   <level>WARNING</level>
   <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
   <method>refresh</method>
-  <thread>31</thread>
-  <message>Failed to refresh cache for view: triggers_status</message>
+  <thread>231</thread>
+  <message>Failed to refresh cache for view: aggregation_profiles</message>
   <exception>
-    <message>fr.in2p3.lavoisier.interfaces.error.AdaptorException: Exception raised for view 'triggers_status' [Adaptor raised exception -- java.lang.RuntimeException: fr.in2p3.lavoisier.interfaces.error.AdaptorException: Exception raised for view 'site_status_reports_cached' [Adaptor raised exception -- java.lang.RuntimeException: fr.in2p3.lavoisier.interfaces.error.AdaptorException: Exception raised for view 'api.status.rotating.caches' [Adaptor raised exception -- fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'api.status.call' [java.io.IOException: 404 page not found
-]]]]</message>
+    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'aggregation_profiles' [java.io.IOException: &lt;root&gt;
+ &lt;status&gt;
+  &lt;message&gt;Unauthorized&lt;/message&gt;
+  &lt;code&gt;401&lt;/code&gt;
+  &lt;details&gt;You need to provide a correct authentication token using the header &amp;#39;x-api-key&amp;#39;&lt;/details&gt;
+ &lt;/status&gt;
+&lt;/root&gt;]</message>
     <frame>
-      <class>fr.in2p3.lavoisier.chaining.link.connector.SAXConnectorLink</class>
-      <method>generate</method>
-      <line>26</line>
+      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
+      <method>getConfiguredAdaptor</method>
+      <line>42</line>
     </frame>
     <frame>
-      <class>fr.in2p3.lavoisier.chaining.Chain</class>
-      <method>generate</method>
-      <line>120</line>
+      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
+      <method>&lt;init&gt;</method>
+      <line>21</line>
     </frame>
     <frame>
-      <class>fr.in2p3.lavoisier.chaining.Chain</class>
-      <method>writeToCache</method>
-      <line>109</line>
+      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
+      <method>&lt;init&gt;</method>
+      <line>46</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+      <method>createChain</method>
+      <line>117</line>
     </frame>
     <frame>
       <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
       <method>refresh</method>
-      <line>151</line>
+      <line>149</line>
     </frame>
     <frame>
       <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
@@ -932,4 +530,841 @@
       <line>745</line>
     </frame>
   </exception>
+</record>
+<record>
+  <date>2015-12-09T15:07:18</date>
+  <millis>1449670038167</millis>
+  <sequence>87126</sequence>
+  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+  <method>createChain</method>
+  <thread>230</thread>
+  <message>Entering fallback because of error [Exception raised for view 'reports' [java.io.IOException: &lt;root&gt;
+ &lt;status&gt;
+  &lt;message&gt;Unauthorized&lt;/message&gt;
+  &lt;code&gt;401&lt;/code&gt;
+  &lt;details&gt;You need to provide a correct authentication token using the header &amp;#39;x-api-key&amp;#39;&lt;/details&gt;
+ &lt;/status&gt;
+&lt;/root&gt;]]</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:18</date>
+  <millis>1449670038167</millis>
+  <sequence>87127</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>230</thread>
+  <message>Failed to refresh cache for view: reports</message>
+  <exception>
+    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'reports' [java.io.IOException: &lt;root&gt;
+ &lt;status&gt;
+  &lt;message&gt;Unauthorized&lt;/message&gt;
+  &lt;code&gt;401&lt;/code&gt;
+  &lt;details&gt;You need to provide a correct authentication token using the header &amp;#39;x-api-key&amp;#39;&lt;/details&gt;
+ &lt;/status&gt;
+&lt;/root&gt;]</message>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
+      <method>getConfiguredAdaptor</method>
+      <line>42</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
+      <method>&lt;init&gt;</method>
+      <line>21</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
+      <method>&lt;init&gt;</method>
+      <line>46</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+      <method>createChain</method>
+      <line>117</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+      <method>refresh</method>
+      <line>149</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
+      <method>run</method>
+      <line>22</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1145</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>615</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>745</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2015-12-09T15:07:18</date>
+  <millis>1449670038182</millis>
+  <sequence>87200</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>231</thread>
+  <message>Cache has been refresh for view: comparison_cern_view_cloud</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:18</date>
+  <millis>1449670038190</millis>
+  <sequence>87261</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>230</thread>
+  <message>Cache has been refresh for view: default</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:18</date>
+  <millis>1449670038200</millis>
+  <sequence>87290</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>230</thread>
+  <message>Cache has been refresh for view: categories</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:18</date>
+  <millis>1449670038216</millis>
+  <sequence>87398</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>230</thread>
+  <message>Cache has been refresh for view: _default_</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:18</date>
+  <millis>1449670038302</millis>
+  <sequence>87401</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>229</thread>
+  <message>Cache has been refresh for view: customFactors</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:20</date>
+  <millis>1449670040453</millis>
+  <sequence>87403</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>228</thread>
+  <message>Cache has been refresh for view: comparison_cern_view</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:20</date>
+  <millis>1449670040803</millis>
+  <sequence>87472</sequence>
+  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+  <method>createChain</method>
+  <thread>228</thread>
+  <message>Entering fallback because of error [Exception raised for view 'comparison_main_cloud' [java.io.IOException: 404 page not found
+]]</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:20</date>
+  <millis>1449670040804</millis>
+  <sequence>87473</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>228</thread>
+  <message>Failed to refresh cache for view: comparison_main_cloud</message>
+  <exception>
+    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'comparison_main_cloud' [java.io.IOException: 404 page not found
+]</message>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
+      <method>getConfiguredAdaptor</method>
+      <line>42</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
+      <method>&lt;init&gt;</method>
+      <line>21</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
+      <method>&lt;init&gt;</method>
+      <line>46</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+      <method>createChain</method>
+      <line>117</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+      <method>refresh</method>
+      <line>149</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
+      <method>run</method>
+      <line>22</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1145</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>615</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>745</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2015-12-09T15:07:20</date>
+  <millis>1449670040808</millis>
+  <sequence>87476</sequence>
+  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+  <method>createChain</method>
+  <thread>230</thread>
+  <message>Entering fallback because of error [Exception raised for view 'comparison_main' [java.io.IOException: 404 page not found
+]]</message>
+</record>
+<record>
+  <date>2015-12-09T15:07:20</date>
+  <millis>1449670040809</millis>
+  <sequence>87477</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>230</thread>
+  <message>Failed to refresh cache for view: comparison_main</message>
+  <exception>
+    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'comparison_main' [java.io.IOException: 404 page not found
+]</message>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
+      <method>getConfiguredAdaptor</method>
+      <line>42</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
+      <method>&lt;init&gt;</method>
+      <line>21</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
+      <method>&lt;init&gt;</method>
+      <line>46</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+      <method>createChain</method>
+      <line>117</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+      <method>refresh</method>
+      <line>149</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
+      <method>run</method>
+      <line>22</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1145</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>615</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>745</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2015-12-09T15:07:24</date>
+  <millis>1449670044971</millis>
+  <sequence>87479</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>231</thread>
+  <message>Cache has been refresh for view: goc.HostList</message>
+</record>
+<record>
+  <date>2015-12-09T15:13:59</date>
+  <millis>1449670439219</millis>
+  <sequence>97597</sequence>
+  <logger>fr.in2p3.lavoisier.service.resources.RedirectHttpHandler</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.service.resources.RedirectHttpHandler</class>
+  <method>service</method>
+  <thread>43</thread>
+  <message>Route: unknown_route/relaod</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:10</date>
+  <millis>1449670450545</millis>
+  <sequence>103338</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>257</thread>
+  <message>Cache has been refresh for view: listNgi</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:10</date>
+  <millis>1449670450717</millis>
+  <sequence>103373</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>258</thread>
+  <message>Cache has been refresh for view: goc.ServiceFlavours</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:10</date>
+  <millis>1449670450744</millis>
+  <sequence>103405</sequence>
+  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+  <method>createChain</method>
+  <thread>256</thread>
+  <message>Entering fallback because of error [Exception raised for view 'customFactorsRaw' [java.io.IOException: 404 page not found
+]]</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:10</date>
+  <millis>1449670450745</millis>
+  <sequence>103406</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>256</thread>
+  <message>Failed to refresh cache for view: customFactorsRaw</message>
+  <exception>
+    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'customFactorsRaw' [java.io.IOException: 404 page not found
+]</message>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
+      <method>getConfiguredAdaptor</method>
+      <line>42</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
+      <method>&lt;init&gt;</method>
+      <line>21</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
+      <method>&lt;init&gt;</method>
+      <line>46</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+      <method>createChain</method>
+      <line>117</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+      <method>refresh</method>
+      <line>149</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
+      <method>run</method>
+      <line>22</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1145</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>615</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>745</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2015-12-09T15:14:10</date>
+  <millis>1449670450957</millis>
+  <sequence>103530</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>256</thread>
+  <message>Cache has been refresh for view: listSite</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:10</date>
+  <millis>1449670450985</millis>
+  <sequence>103635</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>256</thread>
+  <message>Cache has been refresh for view: navbar</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:12</date>
+  <millis>1449670452245</millis>
+  <sequence>106550</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>256</thread>
+  <message>Cache has been refresh for view: customFactors</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:12</date>
+  <millis>1449670452633</millis>
+  <sequence>106582</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>259</thread>
+  <message>Cache has been refresh for view: ngiContactsList</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:13</date>
+  <millis>1449670453894</millis>
+  <sequence>106621</sequence>
+  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+  <method>createChain</method>
+  <thread>256</thread>
+  <message>Entering fallback because of error [Exception raised for view 'aggregation_profiles' [java.io.IOException: &lt;root&gt;
+ &lt;status&gt;
+  &lt;message&gt;Unauthorized&lt;/message&gt;
+  &lt;code&gt;401&lt;/code&gt;
+  &lt;details&gt;You need to provide a correct authentication token using the header &amp;#39;x-api-key&amp;#39;&lt;/details&gt;
+ &lt;/status&gt;
+&lt;/root&gt;]]</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:13</date>
+  <millis>1449670453896</millis>
+  <sequence>106622</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>256</thread>
+  <message>Failed to refresh cache for view: aggregation_profiles</message>
+  <exception>
+    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'aggregation_profiles' [java.io.IOException: &lt;root&gt;
+ &lt;status&gt;
+  &lt;message&gt;Unauthorized&lt;/message&gt;
+  &lt;code&gt;401&lt;/code&gt;
+  &lt;details&gt;You need to provide a correct authentication token using the header &amp;#39;x-api-key&amp;#39;&lt;/details&gt;
+ &lt;/status&gt;
+&lt;/root&gt;]</message>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
+      <method>getConfiguredAdaptor</method>
+      <line>42</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
+      <method>&lt;init&gt;</method>
+      <line>21</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
+      <method>&lt;init&gt;</method>
+      <line>46</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+      <method>createChain</method>
+      <line>117</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+      <method>refresh</method>
+      <line>149</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
+      <method>run</method>
+      <line>22</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1145</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>615</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>745</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2015-12-09T15:14:14</date>
+  <millis>1449670454076</millis>
+  <sequence>106655</sequence>
+  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+  <method>createChain</method>
+  <thread>259</thread>
+  <message>Entering fallback because of error [Exception raised for view 'reports' [java.io.IOException: &lt;root&gt;
+ &lt;status&gt;
+  &lt;message&gt;Unauthorized&lt;/message&gt;
+  &lt;code&gt;401&lt;/code&gt;
+  &lt;details&gt;You need to provide a correct authentication token using the header &amp;#39;x-api-key&amp;#39;&lt;/details&gt;
+ &lt;/status&gt;
+&lt;/root&gt;]]</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:14</date>
+  <millis>1449670454078</millis>
+  <sequence>106657</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>259</thread>
+  <message>Failed to refresh cache for view: reports</message>
+  <exception>
+    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'reports' [java.io.IOException: &lt;root&gt;
+ &lt;status&gt;
+  &lt;message&gt;Unauthorized&lt;/message&gt;
+  &lt;code&gt;401&lt;/code&gt;
+  &lt;details&gt;You need to provide a correct authentication token using the header &amp;#39;x-api-key&amp;#39;&lt;/details&gt;
+ &lt;/status&gt;
+&lt;/root&gt;]</message>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
+      <method>getConfiguredAdaptor</method>
+      <line>42</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
+      <method>&lt;init&gt;</method>
+      <line>21</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
+      <method>&lt;init&gt;</method>
+      <line>46</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+      <method>createChain</method>
+      <line>117</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+      <method>refresh</method>
+      <line>149</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
+      <method>run</method>
+      <line>22</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1145</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>615</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>745</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2015-12-09T15:14:14</date>
+  <millis>1449670454097</millis>
+  <sequence>106763</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>259</thread>
+  <message>Cache has been refresh for view: default</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:14</date>
+  <millis>1449670454246</millis>
+  <sequence>106795</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>257</thread>
+  <message>Cache has been refresh for view: goc.siteList</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:14</date>
+  <millis>1449670454254</millis>
+  <sequence>106826</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>257</thread>
+  <message>Cache has been refresh for view: categories</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:14</date>
+  <millis>1449670454268</millis>
+  <sequence>106931</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>257</thread>
+  <message>Cache has been refresh for view: _default_</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:16</date>
+  <millis>1449670456173</millis>
+  <sequence>106934</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>258</thread>
+  <message>Cache has been refresh for view: comparison_cern_view</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:16</date>
+  <millis>1449670456331</millis>
+  <sequence>106997</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>256</thread>
+  <message>Cache has been refresh for view: comparison_cern_view_cloud</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:16</date>
+  <millis>1449670456647</millis>
+  <sequence>107006</sequence>
+  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+  <method>createChain</method>
+  <thread>258</thread>
+  <message>Entering fallback because of error [Exception raised for view 'comparison_main_cloud' [java.io.IOException: 404 page not found
+]]</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:16</date>
+  <millis>1449670456648</millis>
+  <sequence>107007</sequence>
+  <logger>class fr.in2p3.lavoisier.engine.view.ViewAbstract</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+  <method>createChain</method>
+  <thread>257</thread>
+  <message>Entering fallback because of error [Exception raised for view 'comparison_main' [java.io.IOException: 404 page not found
+]]</message>
+</record>
+<record>
+  <date>2015-12-09T15:14:16</date>
+  <millis>1449670456649</millis>
+  <sequence>107008</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>258</thread>
+  <message>Failed to refresh cache for view: comparison_main_cloud</message>
+  <exception>
+    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'comparison_main_cloud' [java.io.IOException: 404 page not found
+]</message>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
+      <method>getConfiguredAdaptor</method>
+      <line>42</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
+      <method>&lt;init&gt;</method>
+      <line>21</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
+      <method>&lt;init&gt;</method>
+      <line>46</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+      <method>createChain</method>
+      <line>117</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+      <method>refresh</method>
+      <line>149</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
+      <method>run</method>
+      <line>22</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1145</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>615</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>745</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2015-12-09T15:14:16</date>
+  <millis>1449670456651</millis>
+  <sequence>107009</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>WARNING</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>257</thread>
+  <message>Failed to refresh cache for view: comparison_main</message>
+  <exception>
+    <message>fr.in2p3.lavoisier.interfaces.error.InitializationException: Exception raised for view 'comparison_main' [java.io.IOException: 404 page not found
+]</message>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.AdaptorConfigurator</class>
+      <method>getConfiguredAdaptor</method>
+      <line>42</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.chaining.ChainImpl</class>
+      <method>&lt;init&gt;</method>
+      <line>21</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.ChainOfAdaptors</class>
+      <method>&lt;init&gt;</method>
+      <line>46</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewAbstract</class>
+      <method>createChain</method>
+      <line>117</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+      <method>refresh</method>
+      <line>149</line>
+    </frame>
+    <frame>
+      <class>fr.in2p3.lavoisier.engine.task.CacheRefreshTask</class>
+      <method>run</method>
+      <line>22</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor</class>
+      <method>runWorker</method>
+      <line>1145</line>
+    </frame>
+    <frame>
+      <class>java.util.concurrent.ThreadPoolExecutor$Worker</class>
+      <method>run</method>
+      <line>615</line>
+    </frame>
+    <frame>
+      <class>java.lang.Thread</class>
+      <method>run</method>
+      <line>745</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2015-12-09T15:14:23</date>
+  <millis>1449670463741</millis>
+  <sequence>107011</sequence>
+  <logger>fr.in2p3.lavoisier.engine.view.ViewCached</logger>
+  <level>INFO</level>
+  <class>fr.in2p3.lavoisier.engine.view.ViewCached</class>
+  <method>refresh</method>
+  <thread>259</thread>
+  <message>Cache has been refresh for view: goc.HostList</message>
 </record>

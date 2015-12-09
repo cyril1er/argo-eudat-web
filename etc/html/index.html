@@ -53,88 +53,9 @@
                 </h1>
             </section>
 
-<div class="row">
-	<div class="col-md-4">
-		<!--<div class="small-box bg-aqua">-->
-		<div class="small-box bg-olive">
-			<div class="inner">
-				<h4 style="font-size:24px;">Status</h4>
-				<ul>
-					<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/status_report-site?accept=html" style="color:white"> B2HANDLE Status Report</a></li>
-                  <!--
-					<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/status_report-site?report=Cloud&amp;accept=html" style="color:white"> Cloud Status Report</a></li>
-					<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/status_report-site?report=OPS-MONITOR-Critical&amp;accept=html" style="color:white"> Opsmon Status Report</a></li>
-                  -->
-					<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/status_report-form?accept=html" style="color:white"> Customized Status Report</a></li>
-				</ul>
-			</div><!--div inner-->
-			<div class="icon" style="margin-top:10px;"><i class="fa fa-dashboard"></i></div>
-		</div><!--div coll-->
-	</div><!--div small-box bg-aqua-->
-	<div class="col-md-4">
-		<!--<div class="small-box bg-blue">-->
-		<div class="small-box bg-olive-active">
-			<div class="inner">
-				<h4 style="font-size:24px;">Availabilities/Reliabilities</h4>
-				<ul>
-        <!--
-				<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/ngi_reports?accept=html" style="color:white"> NGI Report</a></li>
-        -->
-				<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/site_reports?accept=html" style="color:white"> B2HANDLE Report</a></li>
-        <!--
-				<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/cloud_reports?accept=html" style="color:white"> Cloud Report</a></li>
-        -->
-        <!--
-				<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/opsmon_reports?accept=html" style="color:white"> OpsMon Report</a></li>
-        -->
-				<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/report_form?accept=html" style="color:white"> Customized Report</a></li>
-       <!--
-				<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/customFactors?accept=html" style="color:white">Availability Treemap</a></li>
-       -->
-				</ul>
-			</div><!--div inner-->
-			<div class="icon" style="margin-top:20px;"><i class="fa fa-table"></i></div>
-		</div><!--small-box bg-blue-->
-	</div> <!-- class="col-md-4"-->
-</div><!--row-->
-<div class="row">
-	<div class="col-md-4">
-		<!--<div class="small-box bg-purple">-->
-		<div class="small-box bg-yellow-active">
-			<div class="inner">
-				<h4 style="font-size:24px;">Administration</h4>
-				<ul>
-				<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/listProfiles" style="color:white"> Profile Management</a></li>
-				<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/recomputation" style="color:white">Recomputation request</a></li>
-				<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/administratorsList" style="color:white"> Admin List</a></li>
-				<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier/listViews?accept=html" style="color:white">Admin Interface</a></li>
-				</ul>
-			</div><!--div inner-->
-			<div class="icon" style="margin-top:20px;"><i class="fa fa-cog"></i></div>
-		</div> <!--div small-box bg-purple -->
-	</div> <!-- div coll -->
-	<div class="col-md-4 " >
-		<!--<div class="small-box bg-light-blue">-->
-		<div class="small-box bg-green">
-			<div class="inner">
-			<h4 style="font-size:24px;">About ARGO</h4>
-			<ul>
-    <!--
-				<li><a href="http://snf-685201.vm.okeanos.grnet.gr:80/lavoisier" style="color:white"> Start Page</a></li>
-    -->
-				<li><a href="http://argoeu.github.io" style="color:white">ARGO Web Site</a></li>
-				<li><a href="http://argoeu.github.io/overview" style="color:white"> Documentation</a></li>
-				<li><a href="https://github.com/ARGOeu" style="color:white"> GitHub</a></li>
-				<li><a href="mailto:%6da%69lto:%61rgo%2dgg%75%73-suppor%74@gr%6e%65t%2e%67r" style="color:white">Contact Us</a></li>
-			</ul>
-			</div><!--div inner-->
-			<div class="icon" style="margin-top:10px;"><i class="fa fa-comments"></i></div>
-		</div> <!-- small-box bg-light-blue -->
-	</div><!--div coll-->
-</div><!-- row -->
 
-<!--
-            <div tpl:foreach="/menu/categories" class="col-md-4 small-box {{@bg}}" style="margin-left:20px">
+
+            <div tpl:foreach="/menu/categories" class="col-md-4 small-box {{@bg}}" style="margin-left:20px;color:white;">
                 <div class="inner">
                     <h4 style="font-size:24px;"> {{@title}} </h4>
                     <ul>
@@ -149,7 +70,7 @@
                 </div>
 
             </div>
--->
+
 
 <!--
             <div class="col-md-11 box box-primary" style="margin-top:100px">
