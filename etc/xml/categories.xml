@@ -30,9 +30,13 @@
 
    </categories>
 
-    <release>
+    <argo-release>
+        <repository link="https://github.com/ARGOeu/" icon="fa fa-book"></repository>
+    </argo-release>
+
+    <lavoisier-release>
         <version>2.1.2-SNAPSHOT</version>
         <date>2015, October 28th</date>
         <repository link="http://software.in2p3.fr/lavoisier/" icon="fa fa-book"></repository>
-    </release>
+    </lavoisier-release>
 </menu>
