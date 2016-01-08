@@ -18,7 +18,7 @@
             <description>Call the Availability Method for sites or ngi - All options </description>
         </info>
 
-        <argument name="group_type"></argument>
+        <argument name="group_type">SERVICEGROUPS</argument>
         <argument name="start_time"></argument>
         <argument name="end_time"></argument>
         <argument name="granularity"></argument>
@@ -68,7 +68,7 @@
         <argument name="report">Critical</argument>
 
         <connector type="HTTPConnector">
-            <parameter name="url" eval="concat(property('api.service.availability'),$report,'/SITES/',$site,
+            <parameter name="url" eval="concat(property('api.service.availability'),$report,'/SERVICEGROUPS/',$site,
             '/services?granularity=',$granularity,
             '&amp;start_time=',$start_time,'&amp;end_time=',$end_time)">
             </parameter>
@@ -115,7 +115,7 @@
 
         <argument name="diff">10</argument>
 
-        <argument name="group_type">sites</argument>
+        <argument name="group_type">servicegroups</argument>
         <argument name="report">Critical</argument>
         <argument name="granularity">DAILY</argument>
         <argument name="start_time">0</argument>
