@@ -18,7 +18,7 @@
             <description>Call the Availability Method for sites or ngi - All options </description>
         </info>
 
-        <argument name="group_type"></argument>
+        <argument name="group_type">SERVICEGROUPS</argument>
         <argument name="start_time"></argument>
         <argument name="end_time"></argument>
         <argument name="granularity"></argument>
@@ -68,7 +68,7 @@
         <argument name="report">Critical</argument>
 
         <connector type="HTTPConnector">
-            <parameter name="url" eval="concat(property('api.service.availability'),$report,'/SITES/',$site,
+            <parameter name="url" eval="concat(property('api.service.availability'),$report,'/SERVICEGROUPS/',$site,
             '/services?granularity=',$granularity,
             '&amp;start_time=',$start_time,'&amp;end_time=',$end_time)">
             </parameter>
@@ -115,7 +115,7 @@
 
         <argument name="diff">10</argument>
 
-        <argument name="group_type">sites</argument>
+        <argument name="group_type">servicegroups</argument>
         <argument name="report">Critical</argument>
         <argument name="granularity">DAILY</argument>
         <argument name="start_time">0</argument>
@@ -164,7 +164,7 @@
             <description>Call the Availability Method for sites or ngi - All options </description>
         </info>
 
-        <argument name="group_type">SITES</argument>
+        <argument name="group_type">SERVICEGROUPS</argument>
         <argument name="start_time"></argument>
         <argument name="end_time"></argument>
         <argument name="granularity"></argument>
@@ -172,7 +172,7 @@
 
         <connector type="HTTPConnector">
             <parameter name="url" eval="concat(property('api.status.url'),$report,'/',upper-case($group_type),
-            '/?start_time=',$start_time,'&amp;end_time=',$end_time)">
+            '?start_time=',$start_time,'&amp;end_time=',$end_time)">
             </parameter>
             <parameter name="certificate" eval="property('certificate.path')"/>
             <parameter name="passphrase" eval="property('certificate.password')"/>
@@ -189,7 +189,7 @@
                 <attribute-create out="start_time">$start_time</attribute-create>
                 <attribute-create out="end_time">$end_time</attribute-create>
                 <attribute-create out="url">concat(property('api.status.url'),$report,'/',upper-case($group_type),
-                    '/?start_time=',$start_time,'&amp;end_time=',$end_time)</attribute-create>
+                    '?start_time=',$start_time,'&amp;end_time=',$end_time)</attribute-create>
             </element>
         </processors>
      
@@ -215,7 +215,7 @@
 
         <argument name="diff">10</argument>
 
-        <argument name="group_type">SITES</argument>
+        <argument name="group_type">SERVICEGROUPS</argument>
         <argument name="report">Critical</argument>
         <argument name="granularity">DAILY</argument>
         <argument name="site">false</argument>
@@ -261,7 +261,7 @@
             <description>Call the Availability Method for sites or ngi - All options </description>
         </info>
 
-        <argument name="group_type"></argument>
+        <argument name="group_type">SERVICEGROUPS</argument>
         <argument name="start_time"></argument>
         <argument name="end_time"></argument>
         <argument name="site"></argument>
@@ -273,7 +273,7 @@
         <connector type="HTTPConnector">
             <parameter name="url"
                        eval="choose($service='false',
-                       concat(property('api.status.url'),$report,'/',upper-case($group_type),'/',$site,'/services/','?start_time=',$start_time,'&amp;end_time=',$end_time),
+                       concat(property('api.status.url'),$report,'/',upper-case($group_type),'/',$site,'/services','?start_time=',$start_time,'&amp;end_time=',$end_time),
 
                        choose($endpoint='false',
                                 concat(property('api.status.url'),$report,'/',upper-case($group_type),'/',$site,'/services/',$service,'/endpoints?start_time=',$start_time,'&amp;end_time=',$end_time),

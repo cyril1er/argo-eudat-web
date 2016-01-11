@@ -1,38 +1,41 @@
 <menu title="ARGO Module">
 
-    <categories bg="bg-aqua" icon="fa fa-dashboard" title="Status" >
+    <categories bg="bg-olive" icon="fa fa-dashboard" title="Status" >
 
 
-        <category link="/lavoisier/status_report-site?accept=html" icon="fa fa-home"> B2HANDLE Status Report</category>
+        <category link="/lavoisier/status_report-site?accept=html" icon="fa fa-home"> Status Report</category>
         <category link="/lavoisier/status_report-form?accept=html" icon="fa fa-list"> Customized Status Report</category>
 
 
     </categories>
 
-    <categories bg="bg-blue" icon="fa fa-table" title="Availabilities/Reliabilities" >
-        <category link="/lavoisier/site_reports?accept=html" icon="fa fa-home"> B2HANDLE Report</category>
-        <category link="/lavoisier/report_form?accept=html" icon="fa fa-list"> Customized Report</category>
+    <categories bg="bg-olive-active" icon="fa fa-table" title="Availabilities/Reliabilities" >
+        <category link="/lavoisier/site_reports?month=2015-12" icon="fa fa-home">Service Groups Report</category>
+        <category link="/lavoisier/report_form?accept=html" icon="fa fa-list">Customized Report</category>
     </categories>
 
-    <categories bg="bg-purple" icon="fa fa-cog" title="Administration">
+    <categories bg="bg-yellow-active" icon="fa fa-cog" title="Administration">
         <category link="/lavoisier/listProfiles" icon="fa fa-group"> Profile Management</category>
         <category link="/lavoisier/recomputation" icon="fa fa-mail-forward">Recomputation request</category>
         <category link="/lavoisier/administratorsList" icon="fa fa-list"> Admin List</category>
         <category link="/lavoisier/listViews?accept=html" icon="fa fa-lock">Admin Interface</category>
 
     </categories>
-   <categories bg="bg-light-blue" icon="fa fa-comments" title="About ARGO">
-       <category link="/lavoisier" icon="fa fa-home"> Start Page</category>
+   <categories bg="bg-green" icon="fa fa-comments" title="About ARGO">
        <category link="http://argoeu.github.io" icon="fa fa-eye">ARGO Web Site</category>
        <category link="http://argoeu.github.io/overview" icon="fa fa-book"> Documentation</category>
        <category link="https://github.com/ARGOeu" icon="fa fa-github-alt"> GitHub</category>
-       <category link="mailto:%6d&#97;%69&#108;to&#58;%61r&#103;&#111;%2d&#103;g%75%73&#45;s&#117;&#112;p&#111;&#114;%74&#64;&#103;r%6e%65t%2e%67r" icon="fa fa-envelope">Contact Us</category>
+       <category link="mailto:argo-ggus-support@grnet.gr" icon="fa fa-envelope">Contact Us</category>
 
    </categories>
 
-    <release>
+    <argo-release>
+        <repository link="https://github.com/ARGOeu/" icon="fa fa-book"></repository>
+    </argo-release>
+
+    <lavoisier-release>
         <version>2.1.2-SNAPSHOT</version>
         <date>2015, October 28th</date>
         <repository link="http://software.in2p3.fr/lavoisier/" icon="fa fa-book"></repository>
-    </release>
+    </lavoisier-release>
 </menu>
