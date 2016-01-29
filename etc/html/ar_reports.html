@@ -23,8 +23,8 @@
 <section class="content-header" id="content-header">
     <h1>
         Availabilities Reliabilities Reports
-        <small tpl:if="e:entries/@view!='cloud_reports'">EGI League Report</small>
-        <small tpl:else="">EGI Federated Cloud Report</small>
+        <small tpl:if="e:entries/@view!='cloud_reports'">EUDAT League Report</small>
+        <small tpl:else="">EUDAT Federated Cloud Report</small>
         <button type="button" class="pull-right btn btn-primary" data-toggle="modal" data-target="#myHelp">
             <div class="fa fa-info"></div>
         </button>
@@ -73,7 +73,7 @@
 </section>
 
 
-<div class="box box-primary">
+<div class="box box-warning">
 
     <div class="box-header">
         <h3 class="box-title">{{/e:entries/@description}} - Report Type : {{/e:entries/@report}} <br/>
@@ -100,7 +100,7 @@
 
 
 <div tpl:if="/e:entries/e:entry/Ngi">
-    <div class="box box-primary" id="table">
+    <div class="box box-warning" id="table">
         <div class="box-header">
             <h3 class="box-title">Availabilities Reliabilities Table
 
@@ -131,7 +131,7 @@
 
 
                 <tbody>
-                <tr tpl:foreach="/e:entries/e:entry/Ngi[@NGI!='EGI']">
+                <tr tpl:foreach="/e:entries/e:entry/Ngi[@NGI!='EUDAT']">
 
 
                     <td tpl:if="/e:entries/@details" class="ngi"><a
@@ -187,9 +187,9 @@
                 </tr>
                 </tbody>
                 
-                <tfoot tpl:foreach="/e:entries/e:entry/Ngi[@NGI='EGI']">
+                <tfoot tpl:foreach="/e:entries/e:entry/Ngi[@NGI='EUDAT']">
                     <tr>
-                        <th>EGI - Average Values</th>
+                        <th>EUDAT - Average Values</th>
                         <td tpl:if="Availability[@timestamp=ancestor::e:entries/@month1]">
 
                                 <span class="avCheck label"
@@ -242,7 +242,7 @@
 </div>
 
 <div tpl:else="">
-    <div class="box box-primary"
+    <div class="box box-warning"
          tpl:foreach="/e:entries/e:entry[@key=parent::e:entries/@ngi or parent::e:entries/@ngi='all']">
 
 
@@ -250,7 +250,7 @@
 
         <div class="box-header">
                 <h3 class="box-title">
-                    <a href="/lavoisier/ngi_reports">EGI </a> &gt;
+                    <a href="/lavoisier/ngi_reports">EUDAT </a> &gt;
                     {{@key}}
                 </h3>
 

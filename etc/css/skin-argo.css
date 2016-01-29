@@ -7,8 +7,8 @@
 
 
 .breadcrumb {
-    background-color: rgba(255, 217, 63, 0.33);
-    border: 1px solid rgba(238, 109, 44, 0.29);
+    background-color: rgba(235, 108, 50, 0.54);
+    border: 1px solid rgba(239, 120, 17, 0.78);
     border-radius: 4px;
     list-style: outside none none;
     margin-bottom: 20px;
@@ -176,7 +176,7 @@ h1, h2, h3, h4 {
 .skin-yellow-light .main-header .navbar .nav .open > a:hover,
 .skin-yellow-light .main-header .navbar .nav .open > a:focus,
 .skin-yellow-light .main-header .navbar .nav > .active > a {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(249, 130, 17, 0.39);
     color: #f6f6f6;
 }
 .skin-yellow-light .main-header .navbar .sidebar-toggle {
@@ -251,6 +251,7 @@ h1, h2, h3, h4 {
 .skin-yellow-light .sidebar-menu > li > a {
     border-left: 3px solid transparent;
     font-weight: 600;
+    background-color: rgba(243, 104, 55, 0.57);
 }
 .skin-yellow-light .sidebar-menu > li:hover > a,
 .skin-yellow-light .sidebar-menu > li.active > a {

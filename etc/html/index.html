@@ -4,85 +4,85 @@
 <body>
 <!-- Right side column. Contains the navbar and content of the page -->
 <div id="wrapper" class="wrapper">
-    <!-- Left side column. contains the logo and sidebar -->
-    <header class="main-header">
+	<!-- Left side column. contains the logo and sidebar -->
+	<header class="main-header">
 
 
-        <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top" role="navigation">
-            <!-- Sidebar toggle button-->
+		<!-- Header Navbar: style can be found in header.less -->
+		<nav class="navbar navbar-static-top" role="navigation">
+			<!-- Sidebar toggle button-->
 
 
-            <!-- Navbar Right Menu -->
-            <div class="navbar-custom-menu navbar-collapse collapse">
+			<!-- Navbar Right Menu -->
+			<div class="navbar-custom-menu navbar-collapse collapse">
 
 
-                <ul class="nav navbar-nav">
+				<ul class="nav navbar-nav">
 
 
-                    <!-- Control Sidebar Toggle Button -->
-                    <!--
+					<!-- Control Sidebar Toggle Button -->
+					<!--
                     <li class="active"><a href="#">ARGO WEB UI</a></li>
                     -->
-                    <li>
-                        <a data-toggle="control-sidebar" href="#">
-                            <i class="fa fa-gears"></i>
-                        </a>
-                    </li>
+					<li>
+						<a data-toggle="control-sidebar" href="#">
+							<i class="fa fa-gears"></i>
+						</a>
+					</li>
 
 
-                </ul>
-            </div>
+				</ul>
+			</div>
 
-        </nav>
+		</nav>
 
-    </header>
-
-
-        <!-- Content Header (Page header) -->
-        <div class="content-wrapper">
+	</header>
 
 
-        <!-- Main content -->
-        <section class="content" id="content">
-
-            <section class="content-header" id="content-header">
-                <h1>
-                    Home Page
-                    <small>Start page</small>
-                </h1>
-            </section>
+	<!-- Content Header (Page header) -->
+	<div class="content-wrapper">
 
 
+		<!-- Main content -->
+		<section class="content" id="content">
 
-            <div tpl:foreach="/menu/categories" class="col-md-4 small-box {{@bg}}" style="margin-left:20px;color:white;">
-                <div class="inner">
-                    <h4 style="font-size:24px;"> {{@title}} </h4>
-                    <ul>
-
-                        <li tpl:foreach="category">
-                            <a style="color:white" href="{{@link}}"> {{text()}}</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="icon">
-                    <i class="{{@icon}}"></i>
-                </div>
-
-            </div>
+			<section class="content-header" id="content-header">
+				<h1>
+					Home Page
+					<small>Start page</small>
+				</h1>
+			</section>
 
 
-<!--
-            <div class="col-md-11 box box-primary" style="margin-top:100px">
-                <div class="box-body">
-                    <img src="/resource/img/ack.jpg"  style="height:100px" alt="EUDAT acknowledgement"/>
-                </div>
 
-            </div>
--->
+			<div tpl:foreach="/menu/categories" class="col-md-4 small-box {{@bg}}" style="margin-left:20px;color:white;">
+				<div class="inner">
+					<h4 style="font-size:24px;"> {{@title}} </h4>
+					<ul>
 
-        </section><!-- /.content -->
-            </div>
+						<li tpl:foreach="category">
+							<a style="color:white" href="{{@link}}"> {{text()}}</a>
+						</li>
+					</ul>
+				</div>
+				<div class="icon">
+					<i class="{{@icon}}"></i>
+				</div>
+
+			</div>
+
+
+			<!--
+                        <div class="col-md-11 box box-primary" style="margin-top:100px">
+                            <div class="box-body">
+                                <img src="/resource/img/ack.jpg"  style="height:100px" alt="EUDAT acknowledgement"/>
+                            </div>
+
+                        </div>
+            -->
+
+		</section><!-- /.content -->
+	</div>
 
 </div>
 </body>
