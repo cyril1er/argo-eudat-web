@@ -10,7 +10,7 @@
     </categories>
 
     <categories bg="bg-olive-active" icon="fa fa-table" title="Availabilities/Reliabilities" >
-        <category link="/lavoisier/site_reports?month=2015-12" icon="fa fa-home">Service Groups Report</category>
+        <category link="/lavoisier/site_reports?accept=html" icon="fa fa-home">Service Groups Report</category>
         <category link="/lavoisier/report_form?accept=html" icon="fa fa-list">Customized Report</category>
     </categories>
 
