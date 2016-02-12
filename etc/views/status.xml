@@ -161,7 +161,7 @@
 
 
     <connector type="XMLConnector">
-        <parameter name="content" eval="view('api.status',entry('group_type','sites')|entry('site',$site)|entry('start_time',$start_date)|entry('end_time',$end_date)|entry('report',$report))"></parameter>
+        <parameter name="content" eval="view('api.status',entry('group_type','SERVICEGROUPS')|entry('site',$site)|entry('start_time',$start_date)|entry('end_time',$end_date)|entry('report',$report))"></parameter>
     </connector>
 
         <processors>
@@ -246,7 +246,7 @@
 
 
         <connector type="XMLConnector">
-            <parameter name="content" eval="view('api.status',entry('group_type','sites')|entry('site',$site)|entry('service',$service)|entry('start_time',$start_date)|entry('end_time',$end_date)|entry('report',$report))"></parameter>
+            <parameter name="content" eval="view('api.status',entry('group_type','SERVICEGROUPS')|entry('site',$site)|entry('service',$service)|entry('start_time',$start_date)|entry('end_time',$end_date)|entry('report',$report))"></parameter>
         </connector>
 
         <processors>
@@ -341,7 +341,7 @@
 
 
         <connector type="XMLConnector">
-            <parameter name="content" eval="view('api.status',entry('group_type','sites')|entry('site',$site)|entry('service',$service)|entry('endpoint',$endpoint)|entry('start_time',$start_date)|entry('end_time',$end_date)|entry('report',$report))"></parameter>
+            <parameter name="content" eval="view('api.status',entry('group_type','SERVICEGROUPS')|entry('site',$site)|entry('service',$service)|entry('endpoint',$endpoint)|entry('start_time',$start_date)|entry('end_time',$end_date)|entry('report',$report))"></parameter>
         </connector>
 
         <processors>

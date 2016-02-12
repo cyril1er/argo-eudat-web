@@ -20,9 +20,9 @@
 
         <processors>
             <insert match="/root" nodes="
-            view('api.availability.rotating.caches',entry('group_type','ngi')|entry('granularity','MONTHLY')|entry('diff','0')|entry('delete',$delete))
-            |view('api.availability.rotating.caches',entry('group_type','ngi')|entry('granularity','MONTHLY')|entry('diff','1')|entry('delete',$delete))
-            |view('api.availability.rotating.caches',entry('group_type','ngi')|entry('granularity','MONTHLY')|entry('diff','2')|entry('delete',$delete))">
+            view('api.availability.rotating.caches',entry('group_type','project')|entry('granularity','MONTHLY')|entry('diff','0')|entry('delete',$delete))
+            |view('api.availability.rotating.caches',entry('group_type','project')|entry('granularity','MONTHLY')|entry('diff','1')|entry('delete',$delete))
+            |view('api.availability.rotating.caches',entry('group_type','project')|entry('granularity','MONTHLY')|entry('diff','2')|entry('delete',$delete))">
 
             </insert>
         </processors>
@@ -42,9 +42,9 @@
 
         <processors>
             <insert match="/root" nodes="
-            view('api.availability.rotating.caches',entry('group_type','ngi')|entry('granularity','DAILY')|entry('diff','0')|entry('delete',$delete))
-            |view('api.availability.rotating.caches',entry('group_type','ngi')|entry('granularity','DAILY')|entry('diff','1')|entry('delete',$delete))
-            |view('api.availability.rotating.caches',entry('group_type','ngi')|entry('granularity','DAILY')|entry('diff','2')|entry('delete',$delete))">
+            view('api.availability.rotating.caches',entry('group_type','project')|entry('granularity','DAILY')|entry('diff','0')|entry('delete',$delete))
+            |view('api.availability.rotating.caches',entry('group_type','project')|entry('granularity','DAILY')|entry('diff','1')|entry('delete',$delete))
+            |view('api.availability.rotating.caches',entry('group_type','project')|entry('granularity','DAILY')|entry('diff','2')|entry('delete',$delete))">
 
             </insert>
         </processors>
@@ -80,9 +80,9 @@
 
         <processors>
             <insert match="/root" nodes="
-            view('api.availability.rotating.caches',entry('group_type','ngi')|entry('granularity','MONTHLY')|entry('start_time',$starttime1)|entry('end_time',$endtime1))
-            |view('api.availability.rotating.caches',entry('group_type','ngi')|entry('granularity','MONTHLY')|entry('start_time',$starttime2)|entry('end_time',$endtime2))
-            |view('api.availability.rotating.caches',entry('group_type','ngi')|entry('granularity','MONTHLY')|entry('start_time',$starttime3)|entry('end_time',$endtime3))">
+            view('api.availability.rotating.caches',entry('group_type','project')|entry('granularity','MONTHLY')|entry('start_time',$starttime1)|entry('end_time',$endtime1))
+            |view('api.availability.rotating.caches',entry('group_type','project')|entry('granularity','MONTHLY')|entry('start_time',$starttime2)|entry('end_time',$endtime2))
+            |view('api.availability.rotating.caches',entry('group_type','project')|entry('granularity','MONTHLY')|entry('start_time',$starttime3)|entry('end_time',$endtime3))">
 
             </insert>
         </processors>
@@ -469,9 +469,9 @@
 
         <processors>
             <insert match="/root" nodes="
-            view('api.availability.rotating.caches',entry('group_type','sites')|entry('granularity','MONTHLY')|entry('report',$report)|entry('diff','0')|entry('delete',$delete))
-            |view('api.availability.rotating.caches',entry('group_type','sites')|entry('granularity','MONTHLY')|entry('report',$report)|entry('diff','1')|entry('delete',$delete))
-            |view('api.availability.rotating.caches',entry('group_type','sites')|entry('granularity','MONTHLY')|entry('report',$report)|entry('diff','2')|entry('delete',$delete))">
+            view('api.availability.rotating.caches',entry('group_type','servicegroups')|entry('granularity','MONTHLY')|entry('report',$report)|entry('diff','0')|entry('delete',$delete))
+            |view('api.availability.rotating.caches',entry('group_type','servicegroups')|entry('granularity','MONTHLY')|entry('report',$report)|entry('diff','1')|entry('delete',$delete))
+            |view('api.availability.rotating.caches',entry('group_type','servicegroups')|entry('granularity','MONTHLY')|entry('report',$report)|entry('diff','2')|entry('delete',$delete))">
 
             </insert>
         </processors>
@@ -507,9 +507,9 @@
 
         <processors>
             <insert match="/root" nodes="
-            view('api.availability.rotating.caches',entry('group_type','sites')|entry('granularity','MONTHLY')|entry('start_time',$starttime1)|entry('end_time',$endtime1)|entry('report',$report))
-            |view('api.availability.rotating.caches',entry('group_type','sites')|entry('granularity','MONTHLY')|entry('start_time',$starttime2)|entry('end_time',$endtime2)|entry('report',$report))
-            |view('api.availability.rotating.caches',entry('group_type','sites')|entry('granularity','MONTHLY')|entry('start_time',$starttime3)|entry('end_time',$endtime3)|entry('report',$report))">
+            view('api.availability.rotating.caches',entry('group_type','servicegroups')|entry('granularity','MONTHLY')|entry('start_time',$starttime1)|entry('end_time',$endtime1)|entry('report',$report))
+            |view('api.availability.rotating.caches',entry('group_type','servicegroups')|entry('granularity','MONTHLY')|entry('start_time',$starttime2)|entry('end_time',$endtime2)|entry('report',$report))
+            |view('api.availability.rotating.caches',entry('group_type','servicegroups')|entry('granularity','MONTHLY')|entry('start_time',$starttime3)|entry('end_time',$endtime3)|entry('report',$report))">
 
             </insert>
         </processors>
@@ -532,9 +532,9 @@
 
         <processors>
             <insert match="/root" nodes="
-            view('api.availability.rotating.caches',entry('group_type','sites')|entry('granularity','DAILY')|entry('report',$report)|entry('diff','0')|entry('delete',$delete))
-            |view('api.availability.rotating.caches',entry('group_type','sites')|entry('granularity','DAILY')|entry('report',$report)|entry('diff','1')|entry('delete',$delete))
-            |view('api.availability.rotating.caches',entry('group_type','sites')|entry('granularity','DAILY')|entry('report',$report)|entry('diff','2')|entry('delete',$delete))">
+            view('api.availability.rotating.caches',entry('group_type','servicegroups')|entry('granularity','DAILY')|entry('report',$report)|entry('diff','0')|entry('delete',$delete))
+            |view('api.availability.rotating.caches',entry('group_type','servicegroups')|entry('granularity','DAILY')|entry('report',$report)|entry('diff','1')|entry('delete',$delete))
+            |view('api.availability.rotating.caches',entry('group_type','servicegroups')|entry('granularity','DAILY')|entry('report',$report)|entry('diff','2')|entry('delete',$delete))">
 
             </insert>
         </processors>
@@ -544,7 +544,7 @@
     <view name="site_reports">
         <info>
             <category>AR reports</category>
-            <description>Site League Reports</description>
+            <description>Service Groups Report</description>
         </info>
 
         <argument name="month" eval="0"></argument>
@@ -560,7 +560,7 @@
             <element in="root" out="e:entries">
                 <element-ignore in="root">
                     <element in="group" if="@name=$ngi or $ngi='all'">
-                        <element in="group" if="@type='SITES'" out="Site">
+                        <element in="group" if="@type='SERVICEGROUPS'" out="Site">
                             <attribute in="name" out="site"></attribute>
                             <element in="results" out="Availability"></element>
                         </element>
@@ -607,14 +607,22 @@
 
 
             <processor match="/e:entries" type="InsertProcessor" disabled="$month!=0">
-                <parameter name="nodes" eval="new_attribute('month4',substring(date:add(date:date-time(),'-P1D'),  0,8))|new_attribute('month3',substring(date:add(date:date-time(),'-P1M'),  0,8))|new_attribute('month2',substring(date:add(date:date-time(),'-P2M'),  0,8))|new_attribute('month1',substring(date:add(date:date-time(),'-P3M'),  0,8))"/>
+                <parameter name="nodes"
+                  eval="new_attribute('month4',substring(date:add(date:date-time(),'P1D'),0,8))
+                       |new_attribute('month3',substring(date:add(date:date-time(),'-P1M'),0,8))
+                       |new_attribute('month2',substring(date:add(date:date-time(),'-P2M'),0,8))
+                       |new_attribute('month1',substring(date:add(date:date-time(),'-P3M'),0,8))"/>
             </processor>
 
             <processor match="/e:entries" type="InsertProcessor" disabled="$month=0">
-                <parameter name="nodes" eval="new_attribute('month3',$month)|new_attribute('month4',substring(date:add(concat($month,'-01T00:00:00'),'P1M'),  0,8))|new_attribute('month2',substring(date:add(concat($month,'-01T00:00:00'),'-P1M'),  0,8))|new_attribute('month1',substring(date:add(concat($month,'-01T00:00:00'),'-P2M'),  0,8))"/>
+                <parameter name="nodes"
+                  eval="new_attribute('month3',$month)
+                   |new_attribute('month4',substring(date:add(concat($month,'-01T00:00:00'), 'P1M'),0,8))
+                   |new_attribute('month2',substring(date:add(concat($month,'-01T00:00:00'),'-P1M'),0,8))
+                   |new_attribute('month1',substring(date:add(concat($month,'-01T00:00:00'),'-P2M'),0,8))"/>
             </processor>
 
-            <insert match="/e:entries"  nodes="new_attribute('description','Site League Report')"></insert>
+            <insert match="/e:entries"  nodes="new_attribute('description','Service Groups Report')"></insert>
             <insert match="/e:entries"  nodes="new_attribute('view','site_reports')"></insert>
             <insert match="/e:entries"  nodes="new_attribute('ngi',$ngi)"></insert>
             <insert match="/e:entries"  nodes="new_attribute('related_view','site_ar')"></insert>
