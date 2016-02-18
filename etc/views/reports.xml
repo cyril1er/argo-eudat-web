@@ -622,7 +622,7 @@
                    |new_attribute('month1',substring(date:add(concat($month,'-01T00:00:00'),'-P2M'),0,8))"/>
             </processor>
 
-            <insert match="/e:entries"  nodes="new_attribute('description','Service Groups Report')"></insert>
+            <insert match="/e:entries"  nodes="new_attribute('description','Community Projects Report')"></insert>
             <insert match="/e:entries"  nodes="new_attribute('view','site_reports')"></insert>
             <insert match="/e:entries"  nodes="new_attribute('ngi',$ngi)"></insert>
             <insert match="/e:entries"  nodes="new_attribute('related_view','site_ar')"></insert>
