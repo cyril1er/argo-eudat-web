@@ -544,7 +544,7 @@
     <view name="site_reports">
         <info>
             <category>AR reports</category>
-            <description>Service Groups Report</description>
+            <description>Community Projects Report</description>
         </info>
 
         <argument name="month" eval="0"></argument>
