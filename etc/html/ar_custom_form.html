@@ -98,7 +98,7 @@
 
 
                                 <label>Community Project </label>
-                                <input type="text" style="margin-left:20px" name="site" id="filters-site" placeholder="Enter Search "/>
+                                <input type="text" style="margin-left:20px" name="site" id="filters-project" placeholder="Enter Search "/>
 
 
                             </div>
@@ -168,6 +168,7 @@
 
             <div class="hidden" id="listNgi" tpl:foreach="/root/ngis">{{text()}}</div>
         <div class="hidden" id="listSite" tpl:foreach="/root/sites">{{text()}}</div>
+        <div class="hidden" id="listProjects" tpl:foreach="/root/projects">{{text()}}</div>
 
 
 
@@ -207,8 +208,10 @@
                 // Variable initialisation for the autocomplete
                 var availableNgis = "ALL" + $("#listNgi").text();
                 var availableSites =  "ALL" + $("#listSite").text();
+                var availableProjects =  "ALL" + $("#listProjects").text();
                 var tabavailableNgis=  availableNgis.split(',');
                 var tabavailableSite= availableSites.split(',');
+                var tabavailableProject= availableProjects.split(',');
 
                 $("#filters-ngi").autocomplete({
                     search:true,
@@ -223,6 +226,32 @@
                         // delegate back to autocomplete, but extract the last term
                         response( $.ui.autocomplete.filter(
                                 tabavailableSite, extractLast( request.term ) ) );
+                    },
+                    focus: function() {
+                        // prevent value inserted on focus
+                        return false;
+                    },
+                    select: function( event, ui ) {
+                        var terms = split( this.value );
+                        // remove the current input
+                        terms.pop();
+                        // add the selected item
+                        terms.push( ui.item.value );
+                        // add placeholder to get the comma-and-space at the end
+                        terms.push( "" );
+                        this.value = terms.join( ", " );
+                        return false;
+                    }
+                });
+
+
+
+                $("#filters-project").autocomplete({
+
+                    source: function( request, response ) {
+                        // delegate back to autocomplete, but extract the last term
+                        response( $.ui.autocomplete.filter(
+                                tabavailableProject, extractLast( request.term ) ) );
                     },
                     focus: function() {
                         // prevent value inserted on focus
@@ -284,6 +313,9 @@
 
                     if ($('input[id=filters-site]').val()!='')
                         view= 'site_ar?site=' + $('input[id=filters-site]').val();
+
+                    if ($('input[id=filters-project]').val()!='')
+                        view= 'site_ar?site=' + $('input[id=filters-project]').val();
 
                     var range = 'start_date=' + $('#reportrange').val().replace(' - ','&end_date=');
 
