@@ -24,22 +24,26 @@
         <processors>
             <insert match="/root" nodes="new_element('ngis')"/>
             <insert match="/root" nodes="new_element('sites')"/>
+            <insert match="/root" nodes="new_element('projects')"/>
             <insert match="/root" nodes="new_element('hosts')"/>
 
 
             <insert match="/root/ngis" nodes="view('listNgi')"/>
             <insert match="/root/sites" nodes="view('listSite')"/>
+            <insert match="/root/projects" nodes="view('listProjects')"/>
             <insert match="/root/hosts" nodes="view('goc.HostList')"/>
 
 
             <replace match="/root/ngis/e:entries/e:entry/text()" nodes="concat(',',.)"/>
             <replace match="/root/sites/e:entries/e:entry/text()" nodes="concat(',',.)"/>
+            <replace match="/root/projects/e:entries/e:entry/text()" nodes="concat(',',.)"/>
             <replace match="/root/hosts/e:entries/e:entry/text()" nodes="concat(',',.)"/>
 
 
 
             <remove match="/root/ngis/e:entries" depth="2"/>
             <remove match="/root/sites/e:entries" depth="2"/>
+            <remove match="/root/projects/e:entries" depth="2"/>
             <remove match="/root/hosts/e:entries" depth="2"/>
             <remove match="/root/sf/e:entries" depth="2"/>
         </processors>
