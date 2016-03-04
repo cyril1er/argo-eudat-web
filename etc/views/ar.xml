@@ -223,11 +223,24 @@
                 <attribute-create out="view">site_ar</attribute-create>
                 <attribute-create out="view_details">$view_details</attribute-create>
 
-                <element in="group" if="@name=$ngi or $ngi='false'">
-                    <element in="group" out="Site" if="contains(concat($site,','),@name) or $ngi!='false'">
+                <!-- single project for results page -->
+                <element in="group" if="(@name=$ngi or $ngi='false') and contains($site,',')=false">
+                    <element in="group" out="Site" if="$site=@name or $ngi!='false'">
+                        <element in="results" out="Availability"></element>
+                    </element>                    
+                </element>
+                <!-- single project from custom form -->
+                <element in="group" if="(@name=$ngi or $ngi='false') and substring-after($site,',')=' '">
+                    <element in="group" out="Site" if="substring-before($site,',')=@name or $ngi!='false'">
                         <element in="results" out="Availability"></element>
                     </element>                    
                 </element>    
+                <!-- multiple projects -->
+                <element in="group" if="(@name=$ngi or $ngi='false') and contains(substring-after($site,','),',')">
+                    <element in="group" out="Site" if="contains($site,@name) or $ngi!='false'">
+                        <element in="results" out="Availability"></element>
+                    </element>                    
+                </element>
                 <element-ignore></element-ignore>                
             </element>
             
@@ -455,3 +468,4 @@
 
 
 </config>
+

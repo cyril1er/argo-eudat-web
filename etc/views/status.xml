@@ -84,7 +84,12 @@
                 <attribute-create out="view">'status_report-sf'</attribute-create>
                 <attribute-create out="ngi" if="$ngi!='all'">$ngi</attribute-create>
 
-                <element in="group" if="contains(concat($site,','),@name) or $site='false'">
+                <!-- single project -->
+                <element in="group" if="(substring-after($site,',')=' ' and substring-before($site,',')=@name) or $site='false'">
+                    <attribute-create out="group">$SiteList/results/Ngi[SITE/@NAME=current()/../@name]/@key</attribute-create>
+                </element>
+                <!-- multiple projects -->
+                <element in="group" if="contains(substring-after($site,','),',') and contains($site,@name)">
                     <attribute-create out="group">$SiteList/results/Ngi[SITE/@NAME=current()/../@name]/@key</attribute-create>
                 </element>
                 <element-ignore></element-ignore>
