@@ -414,7 +414,7 @@
 
             <parameter name="header">
                 <entry key="x-api-key" eval="property('argo.api.key')"></entry>
-                <entry key="Accept">application/xml</entry>
+                <entry key="Accept">application/json</entry>
             </parameter>
         </connector>
 
@@ -437,7 +437,7 @@
     <view name="profileUpdate">
         <info>
             <category>ADMIN</category>
-            <description>Delete a profile</description>
+            <description>Update a profile</description>
         </info>
         <argument name="id"></argument>
         <argument name="json"></argument>
@@ -452,7 +452,7 @@
             <parameter name="force-redirect">true</parameter>
             <parameter name="header">
                 <entry key="x-api-key" eval="property('argo.api.key')"></entry>
-                <entry key="Content-Type">application/json</entry>
+                <entry key="Accept">application/json</entry>
             </parameter>
         </connector>
 
@@ -478,7 +478,7 @@
     <view name="profileAddition">
         <info>
             <category>ADMIN</category>
-            <description>Delete a profile</description>
+            <description>Create a profile</description>
         </info>
         <argument name="json"></argument>
 
@@ -492,7 +492,7 @@
             <parameter name="force-redirect">true</parameter>
             <parameter name="header">
                 <entry key="x-api-key" eval="property('argo.api.key')"></entry>
-                <entry key="Content-Type">application/json</entry>
+                <entry key="Accept">application/json</entry>
             </parameter>
         </connector>
 
