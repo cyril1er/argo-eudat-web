@@ -377,7 +377,37 @@ node16.datagrid.cea.fr/org.nordugrid.ARC-CE-ARIS?exec_time=2015-06-01T00:01:20Z'
 
     </view>
 
+    <view name="metricsProfile">
 
+
+
+        <info>
+            <category>API results</category>
+            <description>Metrics Profile</description>
+        </info>
+
+        <connector type="HTTPConnector">
+            <parameter name="url" eval="property('api.metrics.profile')"></parameter>
+            <parameter name="certificate" eval="property('certificate.path')"/>
+            <parameter name="passphrase" eval="property('certificate.password')"/>
+            <parameter name="force-redirect">true</parameter>
+            <parameter name="header">
+                <entry key="x-api-key" eval="property('argo.api.key')"></entry>
+                <entry key="Accept">application/json</entry>
+            </parameter>
+        </connector>
+        <serializer type="JSONStreamSerializer"></serializer>
+
+        <cache type="FileCache">
+            <!--<trigger type="ViewCreatedTrigger"/>-->
+            <trigger type="DeltaTimeTrigger">
+                <parameter name="hours">3</parameter>
+            </trigger>
+            <trigger type="ViewNotifiedTrigger"/>
+            <trigger type="ViewCreatedTrigger"/>
+        </cache>
+
+    </view>
 
 
 
@@ -407,7 +437,13 @@ node16.datagrid.cea.fr/org.nordugrid.ARC-CE-ARIS?exec_time=2015-06-01T00:01:20Z'
                 <parameter name="hours">4</parameter>
             </trigger>
             <trigger type="ViewNotifiedTrigger"/>
-            <trigger type="ViewCreatedTrigger"/>
+
+            <trigger type="DependencyRefreshedTrigger">
+                    <parameter name="views">
+                        <entry>triggerProfileList</entry>
+                    </parameter>
+            </trigger>
+
         </cache>
 
     </view>
