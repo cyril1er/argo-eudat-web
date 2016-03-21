@@ -29,6 +29,28 @@
 
 </view>
 
+<view xmlns:e="http://software.in2p3.fr/lavoisier/entries.xsd" name="listProjects">
+
+    <info>
+        <description>GOC DB : List of Projects</description>
+        <category>GOC DB</category>
+    </info>
+    <connector type="XMLConnector">
+        <parameter name="content" eval="view('goc.siteProjects')/results/SERVICE_GROUP/NAME/text()"/>
+    </connector>
+
+    <cache type="FileCache">
+        <!--<trigger type="ViewCreatedTrigger"/>-->
+        <trigger type="DeltaTimeTrigger">
+            <parameter name="hours">2</parameter>
+        </trigger>
+        <trigger type="ViewNotifiedTrigger"/>
+        <trigger type="ViewCreatedTrigger"/>
+    </cache>
+
+</view>
+
+
 
 
 <view xmlns:e="http://software.in2p3.fr/lavoisier/entries.xsd" name="listSite">
@@ -98,6 +120,30 @@
 
 <connector type="HTTPConnector">
     <parameter name="url" eval="property('goc.siteList')"></parameter>
+    <parameter name="certificate" eval="property('certificate.path')"/>
+    <parameter name="passphrase" eval="property('certificate.password')"/>
+    <parameter name="force-redirect">true</parameter>
+</connector>
+
+<cache type="FileCache">
+    <!--<trigger type="ViewCreatedTrigger"/>-->
+    <trigger type="DeltaTimeTrigger">
+        <parameter name="hours">4</parameter>
+    </trigger>
+    <trigger type="ViewNotifiedTrigger"/>
+    <trigger type="ViewCreatedTrigger"/>
+</cache>
+
+</view>
+
+<view name="goc.siteProjects">
+<info>
+    <description>GOC DB : List of Projects</description>
+    <category>GOC DB</category>
+</info>
+
+<connector type="HTTPConnector">
+    <parameter name="url" eval="property('goc.siteProjects')"></parameter>
     <parameter name="certificate" eval="property('certificate.path')"/>
     <parameter name="passphrase" eval="property('certificate.password')"/>
     <parameter name="force-redirect">true</parameter>

@@ -1,27 +1,7 @@
 <config xmlns="http://software.in2p3.fr/lavoisier/config.xsd" xmlns:xi="http://www.w3.org/2001/XInclude" version="14" xmlns:e="http://software.in2p3.fr/lavoisier/entries.xsd">
     <xi:include href="argo-commons.xml" xpointer="element(/1/*)"/>
+    <xi:include href="security/lavoisier-authenticators.xml" xpointer="element(/1/*)"/>
 
-    <authenticators name="admin">
-        <authenticator type="IPAddressAuthenticator">
-            <parameter name="addresses">
-                <entry>127.0.0.1</entry>
-                <entry>0:0:0:0:0:0:0:1</entry>
-            </parameter>
-        </authenticator>
-    </authenticators>
-
-
-    <authenticators name="console">
-        <authenticator type="HTTPBasicAuthenticator">
-            <parameter name="passwords" eval="view_path('properties', '/security/passwords.properties')"/>
-        </authenticator>
-        <authenticator type="IPAddressAuthenticator">
-            <parameter name="addresses">
-                <entry>127.0.0.1</entry>
-                <entry>0:0:0:0:0:0:0:1</entry>
-            </parameter>
-        </authenticator>
-    </authenticators>
 
     <view>
         <info>

@@ -109,8 +109,8 @@
 
 
 
-                                <label>SITE</label>
-                                <input type="text" style="margin-left:20px" name="site" id="filters-site" placeholder="Enter Search " /><br/>
+                                <label>Community Project</label>
+                                <input type="text" style="margin-left:20px" name="site" id="filters-project" placeholder="Enter Search " /><br/>
 
 
                                 <!--<label>SERVICE TYPE </label>-->
@@ -142,7 +142,7 @@
                                 <!--<input  tpl:foreach="/root/profile" tpl:with-order="@namespace" type="radio" class="profile" name="profile" value="{{concat(@namespace,'-',@name)}}" checked="true"> {{@poems}} <br/></input>-->
 
                                 <select name="report" id="report">
-                                    <option value="B2HANDLE" selected="true">EUDAT B2HANDLE Profile</option>
+                                    <option value="Critical" selected="true">EUDAT Critical Profile</option>
                                 </select>
 
                             </div>
@@ -167,6 +167,7 @@
 
             <div class="hidden" id="listNgi" tpl:foreach="/root/ngis">{{text()}}</div>
             <div class="hidden" id="listSite" tpl:foreach="/root/sites">{{text()}}</div>
+            <div class="hidden" id="listProjects" tpl:foreach="/root/projects">{{text()}}</div>
             <div  id="listHost"  class="hidden"  tpl:foreach="/root/hosts">{{text()}}</div>
 
             <div    id="listSf" class="hidden">
@@ -215,6 +216,7 @@
                 // Variable initialisation for the autocomplete
                 var availableNgis =  $("#listNgi").text();
                 var availableSites =   $("#listSite").text();
+                var availableProjects =   $("#listProjects").text();
                 var availableHosts =   $("#listHost").text();
 
 
@@ -226,11 +228,13 @@
 
                 var tabavailableNgis=  availableNgis.split(',');
                 var tabavailableSite= availableSites.split(',');
+                var tabavailableProject= availableProjects.split(',');
                 var tabavailableHost= availableHosts.split(',');
                 tabavailableHost.shift();
 
                 var tabavailableHostNgi= [];
                 var tabavailableHostSite= [];
+                var tabavailableHostProject= [];
                 var tabavailableHostList= [];
                 var tabavailableHostHost= [];
                 var tabavailableHostSf= [];
@@ -242,6 +246,7 @@
 
                     tabavailableHostNgi[tabsHost[2] + ' (' + tabsHost[3] + ')'] = tabsHost[0];
                     tabavailableHostSite[tabsHost[2] + ' (' + tabsHost[3] + ')'] = tabsHost[1];
+                    tabavailableHostProject[tabsHost[2] + ' (' + tabsHost[3] + ')'] = tabsHost[1];
                     tabavailableHostHost[tabsHost[2] + ' (' + tabsHost[3] + ')'] = tabsHost[2];
                     tabavailableHostList.push(tabsHost[2] + ' (' + tabsHost[3] + ')');
                     tabavailableHostSf[tabsHost[2] + ' (' + tabsHost[3] + ')'] = tabsHost[3];
@@ -297,6 +302,30 @@
                 });
 
 
+
+                $("#filters-project").autocomplete({
+
+                    source: function( request, response ) {
+                        // delegate back to autocomplete, but extract the last term
+                        response( $.ui.autocomplete.filter(
+                                tabavailableProject, extractLast( request.term ) ) );
+                    },
+                    focus: function() {
+                        // prevent value inserted on focus
+                        return false;
+                    },
+                    select: function( event, ui ) {
+                        var terms = split( this.value );
+                        // remove the current input
+                        terms.pop();
+                        // add the selected item
+                        terms.push( ui.item.value );
+                        // add placeholder to get the comma-and-space at the end
+                        terms.push( "" );
+                        this.value = terms.join( ", " );
+                        return false;
+                    }
+                });
 
 
 
@@ -379,6 +408,9 @@
                         if ($('input[id=filters-site]').val())
                         var view='status_report-site?site=' + $('input[id=filters-site]').val();
 
+                        if ($('input[id=filters-project]').val())
+                        var view='status_report-site?site=' + $('input[id=filters-project]').val();
+
 //
 //                        if ($('input[id=filters-sf]').val()!='') {
 //                            view= 'status_report-sf?site=' + $('input[id=filters-site]').val()+'&service='+$('input[id=filters-sf]').val();
@@ -393,6 +425,7 @@
 
 
                         var ListSites = ""
+                        var ListProjects = ""
                         var ListHost="";
                         var ListSf="";
 
@@ -405,10 +438,11 @@
                             var Host=$('input[id=filters-host]').val();
                             var HostName= tabavailableHostHost[Host];
                             var Site= tabavailableHostSite[Host];
+                            var Project= tabavailableHostProject[Host];
                             var Sf= tabavailableHostSf[Host];
 
 
-                            view = 'status_report-metrics?site='+ Site + '&service=' +  Sf +'&endpoint=' + HostName;
+                            view = 'status_report-metrics?site='+ Project + '&service=' +  Sf +'&endpoint=' + HostName;
 
                         }
 
